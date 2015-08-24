@@ -1,0 +1,14 @@
+e.=explorer .
+gl=git log --oneline --all --graph --decorate  $*
+ls=ls --color $*
+
+mongoStart=cd C:\mongodb\bin && mongod.exe
+mongoCli=cd C:\mongodb\bin && mongo
+
+ga=git add -A
+gpm=git push origin master
+gst=git status
+
+subl="C:\Program Files\Sublime Text 3\sublime_text.exe" $*
+
+aliases="C:\Program Files\Sublime Text 3\sublime_text.exe" C:\cmder\config\aliases
