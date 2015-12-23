@@ -5,10 +5,18 @@ ls=ls --color $*
 mongoStart=cd C:\mongodb\bin && mongod.exe
 mongoCli=cd C:\mongodb\bin && mongo
 
-ga=git add -A
-gpm=git push origin master
+gl=git log --oneline --all --graph --decorate  $*
+gaa=git add -A
+ga=git add $*
+gpls=git pull origin $* && git push origin $*
+gps=git push origin $*
+gpl=git pull origin $*
 gst=git status
+gcmsg=git commit -m "$*"
+gcm=git checkout master
+gcb=git checkout -b $*
 
 subl="C:\Program Files\Sublime Text 3\sublime_text.exe" $*
 
 aliases="C:\Program Files\Sublime Text 3\sublime_text.exe" C:\cmder\config\aliases
+hosts="C:\Program Files\Sublime Text 3\sublime_text.exe" $* C:\Windows\System32\drivers\etc\hosts
